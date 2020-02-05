@@ -14,6 +14,7 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 	void render();
+	float speed = 100.f;
 
 private:
 	// Default functions for rendering to the screen.
@@ -21,6 +22,7 @@ private:
 	void endDraw();
 
 	// Default variables for level class.
+	sf::RectangleShape rect;
 	sf::RenderWindow* window;
 	Input* input;
 };
